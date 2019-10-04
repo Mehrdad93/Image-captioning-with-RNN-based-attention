@@ -95,7 +95,7 @@ for file in files:
         for epoch in range(training_epochs):
             #batch_x, batch_y = mnist.py.train.next_batch(batch_size)
             batch_x = R
-            batch_y = ???
+            batch_y = R
             # Run optimization op (backprop) and cost op (to get loss value)
             _, _loss = sess.run([train_op, loss_op], feed_dict={X: batch_x, Y: batch_y})
 
