@@ -5,7 +5,7 @@ from models1 import ICG_model
 import scipy.io
 import pickle
 import json
-f = open('/home/hamid/Desktop/prj/dictionaries/newdict.pickle','rb')
+f = open('./Desktop/prj/dictionaries/newdict.pickle','rb')
 newdict = pickle.load(f)
 f.close()
 
@@ -206,5 +206,3 @@ with tf.Session() as sess:
     with open('/home/hamid/Desktop/prj/results/captions_val2014_fakecap_results_dropout_5000.json','w') as outfile:
         json.dump(all_captions, outfile)
     outfile.close()
-
-
