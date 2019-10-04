@@ -4,5 +4,6 @@ We introduce an attention based model that automatically learns to generate a ca
 
 More details can be found in the following file:
 > Image_Captioning_with_GRU_based_Attention.pdf
+
 > Scores.png
 
