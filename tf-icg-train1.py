@@ -5,13 +5,13 @@ from tensorflow.contrib import grid_rnn
 import scipy.io
 import numpy
 import pickle
-#f = open('/home/hamid/Desktop/prj/dictionaries/newdict.pickle','rb')
+#f = open('./Desktop/prj/dictionaries/newdict.pickle','rb')
 f = open('./newdict.pickle','rb')
 newdict = pickle.load(f)
 f.close()
 from models1 import ICG_model
 rng = numpy.random.RandomState(1234)
-#save_dir = "/home/hamid/Desktop/prj/step1output"
+#save_dir = "./Desktop/prj/step1output"
 save_dir = "./"
 #filename = os.path.join(save_dir, "train_val_482.tfrecords")     # grid_size is 7, feat_dim is 2048, batch_size = 100
 #filename = os.path.join(save_dir, "train_val_480.tfrecords")  # grid_size is 14, feat_dim is 1024, batch_size = 40 (due to OOM)
@@ -103,12 +103,4 @@ finally:
 # Wait for threads to finish
 coord.join(threads)
 sess.close()
-
-
-
-
-
-
-
-
 
