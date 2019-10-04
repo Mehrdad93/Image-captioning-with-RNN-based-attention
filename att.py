@@ -6,7 +6,7 @@ import tensorflow as tf
 _data_type = 'train'    # train, val, test
 _year = '2014'  # 2014, 2015
 _layer = '482'  # 480, 482, 484, ...
-_path = '../Desktop/prj/res-feat/layer' + _layer + '/' + _data_type + _year + '/'
+_path = './Desktop/prj/res-feat/layer' + _layer + '/' + _data_type + _year + '/'
 
 # get an input for Multi Layer Perceptron by giving a loaded mat file of features
 def get_mlp_input(x):
