@@ -38,6 +38,12 @@ BLEU-1,2,3,4/METEOR metrics compared to other methods on MS COCO dataset. Models
 ## Conclusion
 We have presented a new attention mechanism for image caption generation by introducing ATTN GRU (a modified version of traditional GRU). Unlike soft-attention mechanism, our attention model preserves the spatial information as well as the order of the regions in the image. Experimental results on MS COCO dataset shows the effectiveness of our model in image captioning task.
 
+## Contributors
+> Mehrdad Mokhtari
+> Akbar Rafiey
+> Hamid Homapour
+> Faezeh Bayat
+
 More details can be found in the following file:
 > Image_Captioning_with_GRU_based_Attention.pdf
 
