@@ -5,7 +5,7 @@ We introduce an attention based model that automatically learns to generate a ca
 More details can be found in the following file:
 > Image_Captioning_with_GRU_based_Attention.pdf
 
-![GitHub Logo](/images/Example_result.png =100x20)
+![GitHub Logo](/images/Example_result.png){ width: 200px; }
 
 ## Our Contributions and Proposed Model
 Our proposed attention model for image captioning, consisting of CNN, Attention Module, and LSTM. The attention module has two main components. A MLP to compute the attention weights and a attention GRU module which aims to provide a contextual representation that allows logical reasoning over interesting regions.
