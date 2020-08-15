@@ -5,21 +5,19 @@ We introduce an attention based model that automatically learns to generate a ca
 More details can be found in the following file:
 > Image_Captioning_with_GRU_based_Attention.pdf
 
-![GitHub Logo](/images/Example_result.png)
-
-<img src="/images/Example_result.png" width="150" height="150"/>
+<img src="/images/Example_result.png" width="300" height="300"/>
 
 ## Our Contributions and Proposed Model
 Our proposed attention model for image captioning, consisting of CNN, Attention Module, and LSTM. The attention module has two main components. A MLP to compute the attention weights and a attention GRU module which aims to provide a contextual representation that allows logical reasoning over interesting regions.
 
-![GitHub Logo](/images/Proposed_model.png)
+<img src="/images/Proposed_model.png" width="300" height="300"/>
 
 ## Attention GRU Module
 Inspired by [C. Xiong, S. Merity, and R. Socher. Dynamic memory networks for visual and textual question answering. In International conference on machine learning, pages 2397–2406, 2016.], we want the attention mechanism to take into account both position and ordering of the input regions. An RNN would be advantageous in this situation except they cannot make use of the attention wights.
 
 In the figure below, you can ifnd the difference between (a) the traditional GRU, and (b) the proposed attention-based GRU model in this work:
 
-![GitHub Logo](/images/GRUs.png)
+<img src="/images/GRUs.png" width="300" height="300"/>
 
 ## Experiments
 
@@ -36,7 +34,7 @@ The models are implemented with Tensorflow and are trained using the RMSprop opt
 ## Results
 BLEU-1,2,3,4/METEOR metrics compared to other methods on MS COCO dataset. Models with * are trained on both train set and validation set.
 
-![GitHub Logo](/images/scores.png)
+<img src="/images/scores.png" width="300" height="300"/>
 
 ## Conclusion
 We have presented a new attention mechanism for image caption generation by introducing ATTN GRU (a modified version of traditional GRU). Unlike soft-attention mechanism, our attention model preserves the spatial information as well as the order of the regions in the image. Experimental results on MS COCO dataset shows the effectiveness of our model in image captioning task.
