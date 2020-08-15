@@ -12,7 +12,7 @@ Our proposed attention model for image captioning, consisting of CNN, Attention 
 <img src="/images/Proposed_model.png" width="900" height="500"/>
 
 ## Attention GRU Module
-Inspired by [C. Xiong, S. Merity, and R. Socher. Dynamic memory networks for visual and textual question answering. In International conference on machine learning, pages 2397–2406, 2016.], we want the attention mechanism to take into account both position and ordering of the input regions. An RNN would be advantageous in this situation except they cannot make use of the attention wights.
+Inspired by [C. Xiong et al.](http://proceedings.mlr.press/v48/xiong16.html), we want the attention mechanism to take into account both position and ordering of the input regions. An RNN would be advantageous in this situation except they cannot make use of the attention wights.
 
 In the figure below, you can ifnd the difference between (a) the traditional GRU, and (b) the proposed attention-based GRU model in this work:
 
